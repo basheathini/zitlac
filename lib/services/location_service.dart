@@ -43,7 +43,7 @@ class LocationService {
       return false;
     }
   }
-
+//change distanceFilter to 0 for testing with emulator
   Stream<Position> getLocationStream() {
     return Geolocator.getPositionStream(
       locationSettings: Platform.isAndroid ? AndroidSettings(
